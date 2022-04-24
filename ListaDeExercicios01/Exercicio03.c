@@ -12,6 +12,8 @@ int main(void)
     printf("Insira quantos pares de palavras:");
     scanf("%d", &pares);
     
+    if ((pares >= 1) && (pares <= 20))
+    {
     for (loop = 0; loop < pares; loop++) {
         printf("\nPrimeira palavra:");
         scanf("%s", a);
@@ -22,7 +24,7 @@ int main(void)
             if(strlen(a) == strlen(b)) {
                 while (posatual < strlen(a))
                 {
-                    if ( !(a[posatual] == 'a' || a[posatual] == 'e' || a[posatual] == 'i' || a[posatual] == 'o' || a[posatual] == 'u') && !(b[posatual] == 'a' || b[posatual] == 'e' || b[posatual] == 'i' || b[posatual] == 'o' || b[posatual] == 'u')) 
+                    if ( !(a[posatual] == 'a' || a[posatual] == 'e' || a[posatual] == 'i' || a[posatual] == 'o' || a[posatual] == 'u') && (b[posatual] == 'a' || b[posatual] == 'e' || b[posatual] == 'i' || b[posatual] == 'o' || b[posatual] == 'u')) 
                     {
                         a[posnova] = a[posatual];
                         b[posnova] = b[posatual];
@@ -40,6 +42,12 @@ int main(void)
                 printf("No\n");
             }
     }
+    }
+    else
+    {
+        printf("Número de pares inválido");  
+    }
+    
     
     return 0;
 }
