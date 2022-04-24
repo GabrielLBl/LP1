@@ -22,7 +22,7 @@ int main(void)
             if(strlen(a) == strlen(b)) {
                 while (posatual < strlen(a))
                 {
-                    if ( !(a[posatual] == 'a' || a[posatual] == 'e' || a[posatual] == 'i' || a[posatual] == 'o' || a[posatual] == 'u') && (b[posatual] == 'a' || b[posatual] == 'e' || b[posatual] == 'i' || b[posatual] == 'o' || b[posatual] == 'u')) 
+                    if ( !(a[posatual] == 'a' || a[posatual] == 'e' || a[posatual] == 'i' || a[posatual] == 'o' || a[posatual] == 'u') && !(b[posatual] == 'a' || b[posatual] == 'e' || b[posatual] == 'i' || b[posatual] == 'o' || b[posatual] == 'u')) 
                     {
                         a[posnova] = a[posatual];
                         b[posnova] = b[posatual];
