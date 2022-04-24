@@ -1,3 +1,5 @@
+//Aluno 1 : Gabriel Leite Cardoso - RA: 0030482121018
+//Aluno 2: Gustavo Rocha Maia - RA: 0030482121034
 #include <stdio.h>
 int main(void)
 {
